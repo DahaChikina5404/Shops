@@ -2,34 +2,55 @@ import Header from "components/Header"
 import Shop from "components/Shop"
 import Footer from "components/Footer"
 import { useState } from "react"
+import uuid4 from "uuid4"
 
 function App() {
     
     const [shops, setShops] = useState([
         {
-            id: 1,
+            id: uuid4(),
             title: 'Молоко',
-            status: 'Добавлено!'
+            status: false
         },
         {
-            id: 2,
+            id: uuid4(),
             title: 'Хлеб',
-            status: 'Добавлено!'
+            status: false
         },
         {
-            id: 3,
+            id: uuid4(),
             title: 'Шоколад',
-            status: 'Добавлено!'
+            status: false
         },
         {
-            id: 4,
+            id: uuid4(),
             title: 'Яйца',
-            status: 'Добавлено!'
+            status: false
         },
         {
-            id: 5,
+            id: uuid4(),
             title: 'Апельсины',
-            status: 'Добавлено!'
+            status: false
+        },
+        {
+            id: uuid4(),
+            title: 'Бананы',
+            status: false
+        },
+        {
+            id: uuid4(),
+            title: 'Яблоки',
+            status: false
+        },
+        {
+            id: uuid4(),
+            title: 'Помидоры',
+            status: false
+        },
+        {
+            id: uuid4(),
+            title: 'Лук',
+            status: false
         },
     ])
 
