@@ -62,11 +62,11 @@ function App() {
     return (
         <div>
             <Header />
-            <div className="mx-10 min-h-screen">
-                {shops.length === 0 && (<div className="mt-20 text-center text-6xl text-gray-400 font-thin">Список покупок пуст</div>)}
-                {shops.length > 0 && shops.map((shop) => {
+            <div className="min-h-screen">
+                {shops.length === 0 && (<div className="mt-20 text-center text-3xl md:text-6xl text-gray-400 font-thin">Список покупок пуст</div>)}
+                {shops.length > 0 && shops.map((shop, index) => {
                     return (
-                        <Shop key={shop.id} shop={shop} deleteShop={deleteShop} />
+                        <Shop key={shop.id} shop={shop} deleteShop={deleteShop} index={index}/>
                     )
                 })}
             </div>
