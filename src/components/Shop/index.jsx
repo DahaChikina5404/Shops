@@ -18,7 +18,7 @@ function Shop(props) {
             </div>
                
             <div className="flex justify-end items-center gap-4 md:gap-7">
-                <p className="p-2 bg-green-700 text-white rounded-lg">{isAdded ? 'Добавлено!' : 'Добавить!'}</p>              
+                <p className="p-2 bg-indigo-800 text-white rounded-lg">{isAdded ? 'Добавлено!' : 'Добавить!'}</p>              
         
                 <button onClick={toogleBtn}>
                     {isAdded ? <MinusIcon className="w-10 h-10 p-2 bg-green-700 hover:bg-green-900 text-white rounded-lg" />
